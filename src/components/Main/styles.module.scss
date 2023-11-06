@@ -29,9 +29,12 @@
       writing-mode: vertical-rl;
     }
   }
+}
 
-  .characters {
-    flex: 1;
-    background: blue;
-  }
+.agents {
+  flex: 1;
+  background: blue;
+
+  display: flex;
+  column-gap: 16px;
 }
