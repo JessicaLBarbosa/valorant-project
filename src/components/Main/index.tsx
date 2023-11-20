@@ -2,6 +2,9 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 import { Agent } from 'components/Agent'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+
 const character = {
   uuid: '8e253930-4c05-31dd-1b6c-968525494517',
   displayName: 'Omen',
@@ -64,11 +67,31 @@ export const Main = () => (
       <h1>AGENTES</h1>
     </div>
 
-    <div className={styles.agents}>
-      <Agent agent={character} />
-      <Agent agent={character} />
-      <Agent agent={character} />
-      <Agent agent={character} />
-    </div>
+    <Swiper className={styles.agents} spaceBetween={16} slidesPerView={4}>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Agent agent={character} />
+      </SwiperSlide>
+    </Swiper>
   </main>
 )
