@@ -1,21 +1,9 @@
 import Image from 'next/image'
+import { IAgent } from 'types/agent'
+
 import styles from './styles.module.scss'
 
-interface AgentPros {
-  agent: {
-    role: {
-      displayName: string
-    }
-    displayName: string
-    abilities: {
-      displayName: string
-      displayIcon: string
-    }[]
-    fullPortrait: string
-  }
-}
-
-export const Agent = ({ agent }: AgentPros) => (
+export const CardAgent = (agent: IAgent) => (
   <a href="#" className={styles.agent}>
     <div className={styles.text}>
       <p>{agent.role.displayName}</p>
