@@ -11,16 +11,19 @@ export const CardAgent = (agent: IAgent) => (
     </div>
 
     <ul className={styles.abilities}>
-      {agent.abilities.map(ability => (
-        <li key={ability.displayName}>
-          <Image
-            src={ability.displayIcon}
-            width={36}
-            height={36}
-            alt={ability.displayName}
-          />
-        </li>
-      ))}
+      {agent.abilities.map(
+        ability =>
+          ability.displayIcon && (
+            <li key={ability.displayName}>
+              <Image
+                src={ability.displayIcon}
+                width={36}
+                height={36}
+                alt={ability.displayName}
+              />
+            </li>
+          )
+      )}
     </ul>
 
     <div className={styles.background}>

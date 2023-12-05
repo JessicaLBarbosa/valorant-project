@@ -1,4 +1,5 @@
 export interface IAgent {
+  id: string
   role: {
     displayName: string
   }
