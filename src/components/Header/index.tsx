@@ -1,5 +1,6 @@
 import { Triangle } from '@phosphor-icons/react'
 import Image from 'next/image'
+
 import styles from './styles.module.scss'
 
 export const Header = () => (

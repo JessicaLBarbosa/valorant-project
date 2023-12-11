@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import styles from './styles.module.scss'
 import { Agents } from 'components/Agents'
+
+import styles from './styles.module.scss'
 
 export const Main = () => (
   <main className={styles.container}>
