@@ -7,7 +7,7 @@
 </p>
 
 ## 💻 Projeto
-
+https://vercel.com/jessicalbarbosa/valorant-project
 ...
 
 ## 🚀 Tecnologias
